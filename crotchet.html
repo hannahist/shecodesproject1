@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(14, 14, 14) 0%,
+          rgb(45, 40, 54) 90.2%
+        );
+      }
+
+      h1 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 8px;
+        border: 4px solid #44396a;
+        background-color: #3c335b;
+      }
+
+      button {
+        margin-right: 50px;
+        margin-top: 0px;
+        margin-left: 80px;
+        padding: 180px 210px;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/789/original/sorthat3.png?1662666917");
+        background-color: #fff;
+        transition: all 150ms ease-in-out;
+        border-radius: 8px;
+        border: 4px solid #44396a;
+        float: left;
+      }
+
+      h2 {
+        font-size: 80px;
+        margin-right: 260px;
+        margin-top: 0;
+        padding-left: 40px;
+        width: 200px;
+        float: right;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        text-align: right;
+      }
+
+      h3 {
+        font-family: "Harry Potter";
+        font-size: 28px;
+        padding-top: 5px;
+        color: #fdc348;
+        margin-top: 10px;
+        text-align: center;
+        padding: 2px;
+      }
+
+      ul {
+        text-align: center;
+        list-style-type: none;
+        line-height: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fff;
+        margin-left: -40px;
+      }
+
+      h4 {
+        color: #fdc348;
+        font-family: "Harry Potter";
+        font-size: 28px;
+        text-align: center;
+        margin-right: 30px;
+        margin-left: -100px;
+      }
+
+      p2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        float: right;
+        border: 4px solid #44396a;
+        border-radius: 50%;
+        margin-right: 150px;
+        margin-top: 160px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: #44396a;
+      }
+
+      a {
+        color: #fdc348;
+        transition: all 100ms ease-in-out;
+      }
+
+      strong {
+        color: #fdc348;
+        line-height: 30px;
+      }
+
+      img {
+        display: block;
+        margin-top: 700px;
+        margin-right: -320px;
+        margin-bottom: -200;
+        width: 400px;
+        border: 4px solid #44396a;
+        border-radius: 8px;
+        float: right;
+      }
+
+      em2 {
+        color: #26232e;
+        transition: all 100ms ease-in;
+      }
+
+      #leftBorder {
+        float: left;
+        padding-right: 115px;
+        padding-top: 115px;
+        margin-left: 60px;
+        margin-top: -23px;
+        border-radius: 8px;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/956/original/smallerhog.png?1662828439");
+      }
+
+      #rightBorder {
+        float: right;
+        padding-top: 115px;
+        padding-left: 115px;
+        margin-right: 60px;
+        margin-top: -23px;
+        border-radius: 8px;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/956/original/smallerhog.png?1662828439");
+      }
+
+      .crochet {
+        font-family: "Harry Potter";
+        color: #fdc348;
+        margin-left: 260px;
+        font-size: 44px;
+        padding: 2px;
+        font-weight: 50;
+      }
+
+      button:hover {
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/797/original/sorthatnorm2.png?1662670962");
+        cursor: pointer;
+        background-color: #0f0f0f;
+        border: 2px solid #44396a;
+      }
+
+      .poem {
+        margin-left: 50px;
+        margin-right: 100px;
+        margin-top: 0;
+        line-height: 30px;
+        font-size: 26px;
+        font-family: Georgia;
+        color: #fff;
+        background-blend-mode: color;
+        border: 4px solid #44396a;
+        border-radius: 700px 500px 700px 2px;
+        padding-left: 40px;
+        width: 400px;
+        float: right;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 60px;
+        text-align: right;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .equipment {
+        margin-top: 480px;
+        padding: 2px;
+        border: 4px solid #44396a;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .equipment:hover {
+        margin-top: 480px;
+        padding: 2px;
+        border: 4px solid #44396a;
+        border-radius: 8px;
+        background: #44396a;
+      }
+
+      .instructions {
+        float: left;
+        border: 4px solid #44396a;
+        border-radius: 8px;
+        margin-right: 600px;
+        margin-top: -1000px;
+        padding: 10px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: all 150ms ease-in-out;
+      }
+
+      .instructions:hover {
+        background: #44396a;
+        float: left;
+        border: 4px solid #44396a;
+        border-radius: 8px;
+        margin-right: 600px;
+        margin-top: -1000px;
+        padding: 10px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .link {
+        color: #fff;
+        float: right;
+        text-align: right;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 200px;
+        margin-top: -650px;
+        margin-right: 120px;
+        padding-left: 50px;
+        padding-top: 50px;
+      }
+
+      a:hover {
+        color: #eb9915;
+      }
+
+      em2:hover {
+        color: #fdc348;
+      }
+
+      .coder {
+        text-align: center;
+        font-family: monospace;
+        font-size: 16px;
+        color: white;
+        margin-bottom: 500px;
+        margin-top: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span id="leftBorder"></span>
+      <span class="crochet">Crochet a Sorting Hat!</span>
+      <span id="rightBorder"></span>
+    </h1>
+
+    <button></button>
+
+    <span class="poem">
+      <em
+        ><p>
+          "Oh you may not think I'm pretty, But don't judge on what you see,
+          I'll eat myself if you can find a Smarter hat than me."
+        </p></em
+      >
+    </span>
+
+    <h2>🪄</h2>
+
+    <br />
+
+    <div class="equipment">
+      <h3>You will need:</h3>
+
+      <ul>
+        <li>Cardboard</li>
+        <li>Scissors</li>
+        <li>5.5mm Crochet hook</li>
+        <li>Brown worsted weight yarn</li>
+        <li>Stitch marker</li>
+        <li>Crochet needle</li>
+      </ul>
+    </div>
+
+    <br />
+
+    <p2>
+      <strong>
+        R= round
+        <br />
+        sc= single crochet
+        <br />
+        inc= increase
+        <br />
+        trbl = treble crochet
+        <br />
+        dec= decrease
+      </strong>
+    </p2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/817/original/305587423_473336017981602_4707617654483772110_n.jpg?1662683014"
+      alt="The finished product"
+      title="The finished product"
+    />
+    <br />
+
+    <h4>Making the sorting hat!</h4>
+    <div class="instructions">
+      <p3>
+        <strong>Template:</strong>
+        <br />
+        Make a cardboard ring, with the inside circumference the desired fit for
+        your head and the outer circumference the desired width you want your
+        hat's brim to be
+        <br />
+        <br />
+        <strong>Hat body:</strong>
+        <br />
+        Start with a magic circle
+        <br />
+        R1: 4 sc
+        <br />
+        R2: 4 sc
+        <br />
+        R3: (1sc, 1sc inc) repeat until end of round
+        <br />
+        R4: 6 sc
+        <br />
+        R5: (2dc, dc inc) repeat until end of round
+        <br />
+        R6: (2dc, dc inc) repeat until end of round
+        <br />
+        R7: (2dc, dc inc) repeat until end of round
+        <br />
+        R8: (2dc, dc inc) repeat until end of round
+        <br />
+        R9: (3dc, dc inc) repeat until end of round
+        <br />
+        R10: (4dc, dc inc) repeat until end of round
+        <br />
+        R11: (4dc, dc inc) repeat until end of round
+        <br />
+        R12: (5dc, dc inc) repeat until end of round
+        <br />
+        R13: (10dc, dc inc) x3, 2dc
+        <br />
+        R14: trbl inc, 18tbrl, dc until end of round
+        <br />
+        R15: dc inc, 18dc, dc inc, dc until end of round
+        <br />
+        R16: trbl inc, 18tbrl, dc until end of round
+        <br />
+        R17: Repeat R15 until desired width
+        <br />
+        <br />
+        R18: 20trbl or until halfway point, dc until end of round
+        <br />
+        <br />
+        R19: dc around until desired hat height
+        <br />
+        <br />
+        <strong>The brim:</strong>
+        <br />
+        Working in back loops:
+        <br />
+        <br />
+        R20: (5dc, dc inc) repeat until end of round
+        <br />
+        R21: Repeat R20 until width of brim matches cardboard template
+        <br />
+        <br />
+        R22: (5d, dc dec) repeat until end of round
+        <br />
+        R23: (5d, dc dec) repeat until end of round
+        <br />
+        R24: (5d, dc dec) repeat until end of round
+        <br />
+        R25: (5d, dc dec) repeat until end of round
+        <br />
+        R26: (5d, dc dec) repeat until end of round
+        <br />
+        <br />
+        Tuck the cardboard template inside the croched brim
+        <br />
+        R27: sc into the first row of backloops
+        <br />
+        <br />
+        <strong>The Face:</strong>
+        <br />
+        Find the treble crochet areas on the front of the hat and pinch out to
+        form the brow. Sew this in place.
+        <br />
+        Repeat to form mouth.
+        <br />
+        Sew in any loose ends.
+        <br />
+      </p3>
+    </div>
+
+    <div class="link">
+      Follow along with the
+      <strong>
+        <a href="https://youtu.be/qhHdN-1GaCE" target="_blank">
+          video tutorial
+        </a>
+      </strong>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p4
+      ><div class="coder">
+        <em2>*Disclaimer: crocheted hats may not contain magic* </em2>
+        <br /><br /><br />
+        Coded by Hannah Street
+      </div>
+    </p4>
+
+    <script>
+      function sortingHat() {
+        let name = prompt("What is your name?");
+        let house = prompt("What is your Hogwarts house?");
+        house = house.toLowerCase();
+        if (house === "gryffindor" || house === "lion") {
+          alert(" Welcome, " + name + "! 🦁");
+          h2.innerHTML = "🦁";
+          gryffindorCrest();
+        } else {
+          if (house === "slytherin" || house === "snake") {
+            alert(" Welcome, " + name + "! 🐍");
+            h2.innerHTML = "🐍";
+            slytherinCrest();
+          } else {
+            if (house === "ravenclaw" || house === "eagle") {
+              alert(" Welcome, " + name + "! 🦅");
+              h2.innerHTML = "🦅";
+              ravenclawCrest();
+            } else {
+              if (house === "hufflepuff" || house === "badger") {
+                alert(" Welcome, " + name + "!🦡");
+                h2.innerHTML = "🦡";
+                hufflepuffCrest();
+              } else {
+                alert("Muggle alert! 🚫");
+                h2.innerHTML = "🪄";
+                hogwartsCrest();
+              }
+            }
+          }
+        }
+      }
+
+      let hatButton = document.querySelector("button");
+      hatButton.addEventListener("click", sortingHat);
+
+      let h2 = document.querySelector("h2");
+
+      function hufflepuffCrest() {
+        document.getElementById("leftBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/950/original/hufflesmall.jpg?1662826580')";
+        document.getElementById("rightBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/950/original/hufflesmall.jpg?1662826580')";
+      }
+
+      function gryffindorCrest() {
+        document.getElementById("leftBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/953/original/gryffsmall.jpg?1662826995')";
+        document.getElementById("rightBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/953/original/gryffsmall.jpg?1662826995')";
+      }
+
+      function ravenclawCrest() {
+        document.getElementById("leftBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/952/original/ravesmall.jpg?1662826992')";
+        document.getElementById("rightBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/952/original/ravesmall.jpg?1662826992')";
+      }
+
+      function slytherinCrest() {
+        document.getElementById("leftBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/951/original/slythsmall.jpg?1662826987')";
+        document.getElementById("rightBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/951/original/slythsmall.jpg?1662826987')";
+      }
+
+      function hogwartsCrest() {
+        document.getElementById("leftBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/956/original/smallerhog.png?1662828439')";
+        document.getElementById("rightBorder").style.backgroundImage =
+          "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/045/956/original/smallerhog.png?1662828439')";
+      }
+    </script>
+  </body>
+</html>
